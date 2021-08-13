@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héberger un site sur GitHub Pages</title>
+</head>
+<body>
+    <p>Comment héberger un site web sur Github Pages.</p>
+
+    <h2>1. Créer le projet sur github</h2>
+
+    <p>Aller sur son compt <a href="https://github.com">github</a> et créer un nouveau projet en cliquant sur new repository.</p>
+
+    <p>Créer un nouveau fichier nomé index.html et mettre un peu d'HTML dedans.</p>
+
+    <p>Cliquer en bas sur "commit this file" pour sauvegarder le fichier.</p>
+
+    <h2>2. Configurer github pages</h2>
+
+    <p>En haut à droite, cliquer sur "Settings", puis dans le menu de gauche, vers le bas, cliquer sur "Pages".</p>
+
+    <p>Choisir la branche "main" et sauvegarder en cliquant sur "Save".</p>
+
+    <p>Votre projet, a maintenant deux adresse : l'adresse des fichiers sources, et l'adresse du site, consultable sur le web.</p>
+
+    <p>Exemple pour ce site :<br>
+        les fichiers source : <a href="https://github.com/MatysLSY/webdev">https://github.com/MatysLSY/webdev</a><br>
+        le site consultable : <a href="https://matyslsy.github.io/webdev/">https://matyslsy.github.io/webdev/</a>
+    </p>
+
+    <h2>Importer le site en local (sur son PC)</h2>
+
+    <p>Pré-requis : il faut avoir installer <a href="https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git">GIT</a>
+         sur son PC.</p>
+
+    <p>Créer un dossier où l'on veut mettre tous ses projets.</p>
+
+    <p>Cloner le projet (repository) en local avec :
+        <code>git clone https://github.com/MatysLSY/webdev.git</code>
+    </p>
+
+    <p>On peut maintenant ouvrir et éditer le projet avec VScode.</p>
+
+    <h2>Envoyer les modifs</h2>
+
+    <p>On peut le faire avec le terminal : tous les fichiers modifiés ou créés, sont à ajouter avec git add.</p>
+
+    <p>Une fois qu'on a ajouté ces fichiers à enregistrer, on sauvegarde les modifications avec
+        <code>git commit -m "petit message explicatif"</code></p>
+
+    <p>Et enfin, on envoie les modifications sur github, avec <code>git push origin main</code>.</p>
+
+</body>
+</html>
